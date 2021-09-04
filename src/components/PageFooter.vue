@@ -37,7 +37,8 @@ export default {
 footer {
   grid-area: footer;
   background-image: url("~@/assets/stone.jpg");
-  position: relative;
+  position: sticky;
+  bottom:0;
   background-repeat: repeat;
   background-size: contain;
   &:after {
@@ -50,7 +51,7 @@ footer {
     width: 100%;
     height: 10px;
     left: 0;
-    top: -10px;
+    top: -8px;
   }
   font-size: smaller;
   & ul {

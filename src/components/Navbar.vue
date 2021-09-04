@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark py-2">
-    <div class="container">
-      <router-link class="navbar-brand" to="/">TEAM OZE</router-link>
+    <div class="container text-center">
+      <router-link class="navbar-brand" to="/"> <span>TEAM OZE</span> <span><small>Legion TD</small></span> </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,16 +24,17 @@
             <img src="@/assets/bullet2.gif" />
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link">
+            <router-link to="/map" class="nav-link">
               <span>Map</span>
             </router-link>
           </li>
+
           <li class="nav-item px-2">
             <img src="@/assets/bullet2.gif" />
           </li>
           <li class="nav-item">
             <a href="https://discord.com/invite/dhtvnvH" class="nav-link">
-              <span><i class="fab fa-discord"></i>  Discord</span>
+              <span><i class="fab fa-discord"></i> Discord</span>
             </a>
           </li>
         </ul>
@@ -54,11 +55,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .navbar {
+  z-index: 9999;
   grid-area: navbar;
   background-image: url("~@/assets/stone.jpg");
   background-repeat: repeat;
   background-size: contain;
-  position: relative;
+  position: sticky;
+  top: 0;
   &-brand {
     font-family: LifeCraft, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -75,9 +78,10 @@ export default {
     width: 100%;
     height: 10px;
     left: 0;
-    bottom: -10px;
+    bottom: -8px;
   }
   & ul {
+    list-style-image: none !important;
     & li {
       & a {
         & span {
@@ -125,6 +129,9 @@ export default {
           filter: brightness(120%);
           box-shadow: 4px 4px 3px black;
         }
+        &.router-link-active {
+          filter: brightness(120%) !important;
+        }
       }
     }
   }
@@ -132,5 +139,18 @@ export default {
 .nav-link {
   padding-top: 0;
   padding-bottom: 0;
+}
+.navbar-brand{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:11px;
+  & span{ 
+    text-shadow: 3px 3px 1px black;
+    &> small{
+    text-shadow: 2px 2px 1px #222;
+    color:var(--bs-primary);
+    font-size:smaller;
+  }
+  }
 }
 </style>

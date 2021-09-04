@@ -29,15 +29,30 @@
             games from discord. We host ranked 1vs1, 2vs2 and casual 4vs4 games
             and events.
           </p>
-          <h4>Authors of the latest versions:</h4>
-          <div>
-            <img src="@/assets/vlads.png" /> <span>SchachMatt</span>
-            <br />
-            <br />
-            <img src="@/assets/build.png" /> <span>Team OZE</span>
+          <p>
+            If you want to join the community, play ranked games or just hang
+            out come join our <a :href="ds.link">Discord Server</a>!
+          </p>
+          <h4 class="py-2">
+            <img src="@/assets/plus.png" width="36" /> Thanks for the support of
+            <a href="https://www.w3champions.com/">W3Champions</a> community and
+            <a href="https://maps.w3reforged.com/"> maps.w3reforged.com</a>!
+          </h4>
+          <h2>Authors of the latest versions:</h2>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <img src="@/assets/bullet1.gif" class="me-2"  />
+              <img src="@/assets/vlads.png" />
+              <h5 class="px-2">SchachMatt</h5>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="@/assets/bullet1.gif" class="me-2" />
+              <img src="@/assets/build.png" />
+              <h5 class="px-2">Team OZE</h5>
+            </div>
           </div>
-          <h4>Thanks for the support of <a href="https://www.w3champions.com/">W3Champions</a> community!</h4>
           <hr />
+
           <h4>Find us on:</h4>
           <div class="about__data__social">
             <ul>
@@ -61,7 +76,11 @@ export default {
     const store = useStore();
     const socialItems = store.state.social;
     const social = ref(socialItems);
-    return { social };
+    const ds = socialItems.find((item) => {
+      console.log(item);
+      if (item.name == "Discord") return item;
+    });
+    return { social, ds };
   },
 };
 </script>

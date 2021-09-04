@@ -1,0 +1,332 @@
+[
+    {
+        "name":"Dread Lord",
+        "type":"melee",
+        "cost":"200",
+        "dmg":"90-100",
+        "speed":"0.8",
+        "range":"200",
+        "hp":"1000",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Vampiric aura",
+        "ability description":"Nearby friendly melee units gain *% of their attack dmg when they hit enemy units",
+        "ultimate ability":{
+            "Evasion":"50%"
+        },
+        "aura":{
+            "lvl1":"7",
+            "lvl2":"11",
+            "lvl3":"14%"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Death knight",
+        "type":"melee",
+        "cost":"200",
+        "dmg":"90-100",
+        "speed":"0.8",
+        "range":"200",
+        "hp":"1000",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Unholy aura",
+        "ability description":"increases nearby friendly units mov speed and hp regeneration rate",
+        "ultimate ability":{
+            "Deadly poison":"100 dmg/s, -25% ms, -25% as"
+        },
+        "aura":{
+            "lvl1":"5 -  2",
+            "lvl2":"10 - 4",
+            "lvl3":"15% mov sp, 6hp/s"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Tauren chief",
+        "type":"melee",
+        "cost":"200",
+        "dmg":"90-100",
+        "speed":"0.8",
+        "range":"200",
+        "hp":"1000",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Endurance aura",
+        "ability description":"Increases nearby friendly units attack rate",
+        "ultimate ability":{
+            "Death blow":"10% chance, 10x dmg"
+        },
+        "aura":{
+            "lvl1":"6",
+            "lvl2":"8",
+            "lvl3":"10% atk speed"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Mountain king",
+        "type":"melee",
+        "cost":"200",
+        "dmg":"90-100",
+        "speed":"0.8",
+        "range":"200",
+        "hp":"1000",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Command aura (fighting spirit)",
+        "ability description":"Increases nearby friendly units attack damage",
+        "ultimate ability":{
+            "Swipe":"30% chance, 300 dmg, 4 (2) sec stun"
+        },
+        "aura":{
+            "lvl1":"7",
+            "lvl2":"9",
+            "lvl3":"12% Atk dmg"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Medusa",
+        "type":"ranged",
+        "cost":"300",
+        "dmg":"90-100",
+        "speed":"0.65",
+        "range":"600",
+        "hp":"600",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Slow aura",
+        "ability description":"Slows nearby enemy units movement speed",
+        "ultimate ability":{
+            "Water shield":"Frost Armor +8"
+        },
+        "aura":{
+            "lvl1":"15",
+            "lvl2":"30",
+            "lvl3":"45% slow aura"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Priestess of the moon",
+        "type":"ranged",
+        "cost":"300",
+        "dmg":"90-100",
+        "speed":"0.65",
+        "range":"600",
+        "hp":"600",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Trueshot aura",
+        "ability description":"An aura that gives friendly nearby units a bonus to ranged attacks ",
+        "ultimate ability":{
+            "Frost arrows":"-50% ms, -50% as"
+        },
+        "aura":{
+            "lvl1":"6",
+            "lvl2":"9",
+            "lvl3":"12% dmg aura"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Paladin",
+        "type":"melee",
+        "cost":"200",
+        "dmg":"90-100",
+        "speed":"0.8",
+        "range":"200",
+        "hp":"1000",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Devotion aura",
+        "ability description":"Gives additional armor to nearby friendly units and heal a target friendly unit every 10 sec",
+        "ultimate ability":{
+            "Heal":"450hp single heal"
+        },
+        "aura":{
+            "lvl1":"1",
+            "lvl2":"2",
+            "lvl3":"3 armor"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Keeper of the grove",
+        "type":"ranged",
+        "cost":"300",
+        "dmg":"90-100",
+        "speed":"0.65",
+        "range":"600",
+        "hp":"600",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Thorns aura",
+        "ability description":"An aura that gives friendly nearby units a dmg shield, which deals melee damage back",
+        "ultimate ability":{
+            "Healing wave":"500hp chain heal"
+        },
+        "aura":{
+            "lvl1":"10",
+            "lvl2":"15",
+            "lvl3":"20% thorns aura"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Archmage",
+        "type":"ranged",
+        "cost":"300",
+        "dmg":"90-100",
+        "speed":"0.65",
+        "range":"600",
+        "hp":"600",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Brilliance aura",
+        "ability description":"Increase nearby friendly untis mana regen",
+        "ultimate ability":{
+            "Spiritual flame":"armor +3, 20% dmg"
+        },
+        "aura":{
+            "lvl1":"1,25",
+            "lvl2":"2,5",
+            "lvl3":"5% max mana p/s brilliance aura"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    },
+    {
+        "name":"Dark ranger",
+        "type":"ranged",
+        "cost":"300",
+        "dmg":"90-100",
+        "speed":"0.65",
+        "range":"600",
+        "hp":"600",
+        "attack":"chaos",
+        "armor":"Hero",
+        "ability name":"Black arrow",
+        "ability description":"Decreases the damage of nearby enemies",
+        "ultimate ability":{
+            "Spiritual flame":"armor debuff -8"
+        },
+        "aura":{
+            "lvl1":"-5",
+            "lvl2":"-10",
+            "lvl3":"-15% dmg"
+        },
+        "scailing":{
+            "lvl2":{
+                "gold":"225",
+                "dmg":"165",
+                "hp":"1800"
+            },
+            "lvl3":{
+                "gold":"450",
+                "dmg":"275",
+                "hp":"3000"
+            }
+        }
+    }
+]

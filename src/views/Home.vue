@@ -3,29 +3,45 @@
     <div class="row align-items-center h-100">
       <div class="col-sm-12 col-md-8 align-items">
         <div class="border-w3">
-          <div class="banner-text p-3">
+          <div class="banner-text p-3 text-center">
             <img src="@/assets/logo.png" class="img-fluid logo" />
-            <h1>Welcome to Legion TD Team OZE</h1>
+            <h1 class="text-left">Welcome to Legion TD Team OZE</h1>
             <hr />
-            <p>
+            <p class="text-start">
               Legion TD is an evolved Tower Defense game. It was originally
               created by Lisk. Since then, it’s original foundation has been
               altered by many developers and their teams in their own vision,
               creating a more feature rich, balanced and competitive map.
             </p>
-            <router-link to="about"><button class="btn px-5 text-white" type="submit">Read more</button></router-link>
+            <br />
+            <router-link to="about"
+              ><button class="btn px-5 text-white" type="submit">
+                Read more
+              </button></router-link
+            >
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4 text-center">
-        <div class="border-w3 h-100 map-preview">
+        <div class="border-w3 h-100 map-preview mb-1">
           <img src="@/assets/ltd.jpg" />
-          <p class="text-white">Latest version: 7.0d</p>
-          <button class="btn text-white" type="submit">Download</button>
+          <button class="btn text-white" type="submit">
+            <router-link to="/map">Go to map</router-link>
+          </button>
         </div>
-        <div class="text-white view-logs py-1">
-          <img src="@/assets/scroll2.png" style="width:28px" /> Click here to view the
-          <span>change logs </span>
+        <div class="border-w3 h-100 d-flex aling-items-center text-white">
+          <div class="patreon p-3">
+            <p class="m-0 p-0">
+              <img src="@/assets/support.png" width="36" /> If you want to support us
+              please check our Patreon page!<br />
+            </p>
+            <span><i class="far fa-heart"></i> Thank you!</span><br>
+            <button class="btn text-white" type="submit">
+              <a :href="plink" class="p-2"
+                ><i class="fab fa-patreon"></i> Patreon</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -34,10 +50,19 @@
 
 <script>
 // @ is an alias to /src
-
+import { ref } from "vue";
+import { useStore } from "vuex";
 export default {
   name: "Home",
   components: {},
+  setup() {
+    const store = useStore();
+    const w3mapsLink = store.state.social[2].link;
+    const w3link = ref(w3mapsLink);
+    const patreon = store.state.social[3].link;
+    const plink = ref(patreon);
+    return { w3link, plink };
+  },
 };
 </script>
 
@@ -64,15 +89,7 @@ export default {
     left: 0;
     width: 100%;
   }
-  & p {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    z-index: 9999;
-    place-self: center;
-    text-shadow: 2px 2px 1px black;
-    display: inline-block;
-    margin: auto;
-  }
+
   & .btn {
     position: absolute;
     bottom: 10%;
@@ -94,10 +111,8 @@ export default {
 .view-logs {
   text-shadow: 1px 1px 1px black;
   cursor: pointer;
-  &:hover {
-    & > span {
-      color: var(--bs-yellow);
-    }
-  }
+}
+.patreon {
+  background-image: url("~@/assets/pd.jpg");
 }
 </style>
