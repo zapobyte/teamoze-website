@@ -21,10 +21,13 @@
             wave, the enemy will go towards the middle and the king. If your
             king loses all his 4 lives the team loses the game.
           </p>
-          <p>For more view the below video, join the <a :href="discordLink">Discord</a> community and play the game.</p>
           <p>
-            Don't forget, if you don't play alone be a team player. And be nice. Have fun!
-            :)
+            For more view the below video, join the
+            <a :href="discordLink">Discord</a> community and play the game.
+          </p>
+          <p>
+            Don't forget, if you don't play alone be a team player. And be nice.
+            Have fun! :)
           </p>
           <div class="row">
             <div class="col-sm-12 col-md-5">
@@ -54,6 +57,19 @@
               "
             >
               <div class="map__info p-3 text-center">
+                <h2 class="text-danger">
+                  <img src="@/assets/dl.png" width="36" /> Download
+                </h2>
+                <ul class="p-0 mx-3 m-auto">
+                  <li>
+                    To download the official
+                    <button class="btn w-50">
+                      <a :href="w3link">Download</a>
+                    </button>
+                  </li>
+                </ul>
+                <hr />
+
                 <h2 class="text-warning">
                   <img src="@/assets/changelogs.png" width="36" /> Change logs
                 </h2>
@@ -66,22 +82,9 @@
                     </button>
                   </li>
                 </ul>
-                <hr />
-                <h2 class="text-danger">
-                  <img src="@/assets/dl.png" width="36" /> Download
-                </h2>
-                <ul class="p-0 mx-3 m-auto">
-                  <li>
-                    To download the official
-                    <button class="btn w-50">
-                      <a :href="w3link">Download</a>
-                    </button>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -97,7 +100,7 @@ export default {
     const w3mapsLink = store.state.social[2].link;
     const discordLink = store.state.social[0].link;
     const w3link = ref(w3mapsLink);
-    return { w3link,discordLink };
+    return { w3link, discordLink };
   },
 };
 </script>
