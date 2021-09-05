@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 py-2 text-white text-start">
-          <small>Made with <i class="far fa-heart"></i> byTeam OZE - Legion TD @ {{ new Date().getFullYear() }}</small>. <span class="text-small"> <i class="fas fa-code" title="coded"></i> by <a href="https://victorz.me">zapo</a></span>
+          <small>Made with <i class="far fa-heart"></i> by Team OZE - Legion TD @ {{ new Date().getFullYear() }}</small>. <span class="text-small"> <i class="fas fa-code" title="coded"></i> by <a href="https://victorz.me">zapo</a></span>
         </div>
         <div class="col-12 col-md-6 py-2 text-white text-end">
           <ul>
