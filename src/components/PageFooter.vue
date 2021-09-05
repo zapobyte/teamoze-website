@@ -37,7 +37,7 @@ export default {
 footer {
   grid-area: footer;
   background-image: url("~@/assets/stone.jpg");
-  position: sticky;
+  position: relative;
   bottom:0;
   background-repeat: repeat;
   background-size: contain;
