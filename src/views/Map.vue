@@ -53,7 +53,7 @@
                 border-w3
               "
             >
-              <div class="map__info p-3">
+              <div class="map__info p-3 text-center">
                 <h2 class="text-warning">
                   <img src="@/assets/changelogs.png" width="36" /> Change logs
                 </h2>
