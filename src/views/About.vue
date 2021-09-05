@@ -9,15 +9,15 @@
           </div>
           <hr />
           <p>
-            Legion TD is an evolved Tower Defense game. It was originally
+            <b>Legion TD</b> is an evolved Tower Defense game. It was originally
             created by Lisk. Since then, it’s original foundation has been
             altered by many developers and their teams in their own vision,
             creating a more feature rich, balanced and competitive map.
           </p>
           <p>
-            Team OZE was established in 2020 in collaboration with one of the
+            <b>Team OZE</b> was established in 2020 in collaboration with one of the
             co-creators from previous version 4.7. Since then, it has become a
-            community project involving as many Legion TD fans as possible,
+            community project involving as many <b>Legion TD</b> fans as possible,
             working as a unity to create the polished version it is today. Our
             goal has been to improve the map while keeping the core mechanics of
             the game in place and make this map enjoyable for players of all
@@ -31,7 +31,7 @@
           </p>
           <p>
             If you want to join the community, play ranked games or just hang
-            out come join our <a :href="ds.link">Discord Server</a>!
+            out come join our <i class="fab fa-discord"></i> <a :href="ds.link">Discord Server</a>!
           </p>
           <h4 class="py-2">
             <img src="@/assets/plus.png" width="36" /> Thanks for the support of

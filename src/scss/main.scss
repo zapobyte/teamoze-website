@@ -1,3 +1,5 @@
+@import "~@/scss/hamburger.scss";
+
 html,
 body {
     margin: 0;
@@ -68,4 +70,12 @@ ul {
             url("~@/assets/metal-border2-bottom-right.png") no-repeat bottom right;
         background-size: 104px auto, 112px auto, 196px auto, 155px auto;
     }
+}
+
+hr{
+    border:0;
+    background-image:url("~@/assets/border.gif");
+    height:8px;
+    background-size:contain;
+    opacity: 1;
 }

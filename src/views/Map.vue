@@ -4,41 +4,28 @@
       <div class="col-12 h-100 p-0 m-0 border-w3 map text-left">
         <div class="map__data p-3">
           <h1 class="text-left">
-            <img src="@/assets/map.png" class="img-fluid" /> About Legion
-            TD Map
+            <img src="@/assets/map.png" class="img-fluid" /> About Legion TD Map
           </h1>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            ultricies elementum consectetur. Curabitur pretium arcu eget ligula
-            porta viverra. Nulla tristique nisi vel urna auctor condimentum.
-            Cras quis ipsum sodales, posuere tellus at, tempor felis. Aliquam
-            vehicula augue vitae velit gravida lobortis. Duis ullamcorper, augue
-            nec scelerisque pellentesque, metus erat euismod mi, eget ultricies
-            est risus vitae neque. Vestibulum ante ipsum primis in faucibus orci
-            luctus et ultrices posuere cubilia curae; Sed dui orci, laoreet ac
-            sollicitudin eu, feugiat eget arcu. Nulla quis massa faucibus,
-            gravida mauris sed, eleifend mi. Phasellus pellentesque, libero id
-            suscipit finibus, sem neque commodo est, vel efficitur nisi ex in
-            mauris. Aliquam erat volutpat. Phasellus ut vehicula metus,
-            consequat porta neque. Proin lacinia malesuada odio vel volutpat.
+            An infinitely replayable multiplayer and single-player tower
+            defense. Defend against waves of enemies and destroy the enemy's
+            king before they destroy yours. You can play games of 1v1, 2v2 or
+            3v3 or 4v4 depening on how you want.<br />
+            There are 2 sides West and East, each with 4 players. You must
+            choose from a pool of 6 unites each round. Depening on the mode
+            choosen there can be up to 30 rounds. <br />
+            Economy is another important part so be careful how you upgrade your
+            lumber and send units from the barracks for better income. <br />
+            Each monster gievs money when killed. If you do not clear all your
+            wave, the enemy will go towards the middle and the king. If your
+            king loses all his 4 lives the team loses the game.
           </p>
+          <p>For more view the below video, join the <a :href="discordLink">Discord</a> community and play the game.</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            ultricies elementum consectetur. Curabitur pretium arcu eget ligula
-            porta viverra. Nulla tristique nisi vel urna auctor condimentum.
-            Cras quis ipsum sodales, posuere tellus at, tempor felis. Aliquam
-            vehicula augue vitae velit gravida lobortis. Duis ullamcorper, augue
-            nec scelerisque pellentesque, metus erat euismod mi, eget ultricies
-            est risus vitae neque. Vestibulum ante ipsum primis in faucibus orci
-            luctus et ultrices posuere cubilia curae; Sed dui orci, laoreet ac
-            sollicitudin eu, feugiat eget arcu. Nulla quis massa faucibus,
-            gravida mauris sed, eleifend mi. Phasellus pellentesque, libero id
-            suscipit finibus, sem neque commodo est, vel efficitur nisi ex in
-            mauris. Aliquam erat volutpat. Phasellus ut vehicula metus,
-            consequat porta neque. Proin lacinia malesuada odio vel volutpat.
+            Don't forget, if you don't play alone be a team player. And be nice. Have fun!
+            :)
           </p>
-          <hr />
           <div class="row">
             <div class="col-sm-12 col-md-5">
               <div class="htw">
@@ -57,73 +44,50 @@
             <div class="col-sm-12 col-md-2 text-center align-self-center">
               <img src="@/assets/orc_crest.png" class="img-fluid" />
             </div>
-            <div class="col-sm-12 col-md-5 justify-content-between">
-              <h2>
-                <img src="@/assets/changelogs.png" width="36" /> Change logs
-              </h2>
+            <div
+              class="
+                col-sm-12 col-md-5
+                p-0
+                text-white
+                justify-content-between
+                border-w3
+              "
+            >
+              <div class="map__info p-3">
+                <h2 class="text-warning">
+                  <img src="@/assets/changelogs.png" width="36" /> Change logs
+                </h2>
 
-              <ul class="mb-5 p-0 mx-3 m-auto">
-                <li>
-                  To view the changelogs please go
-                  <a :href="w3link">here</a>.
-                </li>
-              </ul>
-              <hr />
-              <h2 class="pt-5">
-                <img src="@/assets/dl.png" width="36" /> Download
-              </h2>
-              <ul class="p-0 mx-3 m-auto">
-                <li>
-                  To download the official map below
-                  <button class="btn w-50">
-                    <a :href="w3link">Download</a>
-                  </button>
-                </li>
-              </ul>
+                <ul class="p-0 mx-3 m-auto">
+                  <li>
+                    To view the changelogs please here
+                    <button class="btn w-50">
+                      <a :href="w3link">Change logs</a>
+                    </button>
+                  </li>
+                </ul>
+                <hr />
+                <h2 class="text-danger">
+                  <img src="@/assets/dl.png" width="36" /> Download
+                </h2>
+                <ul class="p-0 mx-3 m-auto">
+                  <li>
+                    To download the official
+                    <button class="btn w-50">
+                      <a :href="w3link">Download</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <hr />
-          <div class="container p-0 m-0">
-            <h2> <img src="@/assets/info.png" class="img-fluid" /> Map information</h2>
 
-            <details>
-              <summary><h3 class="d-inline-flex">Heroes</h3></summary>
-
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col" v-for="hero in heroes" :key="hero.name">
-                  <div class="card border-w3  mx-2" :key="hero.name">
-                    <div class="card-body text-white">
-                      <h5 class="card-title"> <img src="@/assets/dread.png" class="img-fluid" /> {{ hero.name }}</h5>
-                      <div class="card-text">
-                        <ul class="row row-cols-1 row-cols-md-2 g-4">
-                          <li class="col">
-                            Cost:{{hero.cost}}
-                          </li>
-                          <li class="col">
-                            Hp:{{hero.hp}}
-                          </li>
-                          <li class="col">
-                            Dmg:{{hero.dmg}}
-                          </li>
-                          <li class="col">
-                            Armor:{{hero.armor}}
-                          </li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </details>
-          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-import heroes from "@/assets/heroes.json";
 import { ref } from "vue";
 import { useStore } from "vuex";
 export default {
@@ -131,8 +95,9 @@ export default {
   setup() {
     const store = useStore();
     const w3mapsLink = store.state.social[2].link;
+    const discordLink = store.state.social[0].link;
     const w3link = ref(w3mapsLink);
-    return { w3link, heroes };
+    return { w3link,discordLink };
   },
 };
 </script>
@@ -147,10 +112,12 @@ export default {
       padding: 0;
     }
   }
-  & .card{
-    background:transparent;
+  & .card {
+    background: transparent;
     background-image: url("~@/assets/pd.jpg");
-
+  }
+  &__info {
+    background-image: url("~@/assets/pd.jpg");
   }
 }
 </style>

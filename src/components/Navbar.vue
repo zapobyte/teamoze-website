@@ -3,15 +3,20 @@
     <div class="container text-center">
       <router-link class="navbar-brand" to="/"> <span>TEAM OZE</span> <span><small>Legion TD</small></span> </router-link>
       <button
+        @click="toggleMenu"
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
-        aria-expanded="false"
+        :aria-expanded="expanded"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <div class="hamburger" id="hamburger" ref="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
@@ -49,6 +54,23 @@ export default {
   props: {
     msg: String,
   },
+  data(){
+    return {
+      expanded:false
+    }
+  },
+  watch:{
+    expanded(n,o){
+      console.log(n,o)
+    }
+  },
+  methods:{
+    toggleMenu(){
+      const btn = this.$refs.btn;
+      const icon =  this.$refs.hamburger;
+      icon.classList.toggle('is-active');
+    }
+  }
 };
 </script>
 
@@ -152,5 +174,11 @@ export default {
     font-size:smaller;
   }
   }
+}
+
+.navbar-toggler{
+  border:0;
+  outline:0;
+  box-shadow: 0 0 0 0;
 }
 </style>

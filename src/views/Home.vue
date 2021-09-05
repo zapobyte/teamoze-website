@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <div class="row align-items-center h-100">
+    <div class="row  py-3 align-items-center h-100">
       <div class="col-sm-12 col-md-8 align-items">
         <div class="border-w3">
           <div class="banner-text p-3 text-center">
             <img src="@/assets/logo.png" class="img-fluid logo" />
-            <h1 class="text-left">Welcome to Legion TD Team OZE</h1>
+            <h1 class="text-left">Welcome to <b>Legion TD Team OZE</b></h1>
             <hr />
             <p class="text-start">
-              Legion TD is an evolved Tower Defense game. It was originally
+              <b>Legion TD</b> is an evolved Tower Defense game. It was originally
               created by Lisk. Since then, it’s original foundation has been
               altered by many developers and their teams in their own vision,
               creating a more feature rich, balanced and competitive map.
@@ -32,10 +32,10 @@
         <div class="border-w3 h-100 d-flex aling-items-center text-white">
           <div class="patreon p-3">
             <p class="m-0 p-0">
-              <img src="@/assets/support.png" width="36" /> If you want to support us
+             If you want to support us
               please check our Patreon page!<br />
             </p>
-            <span><i class="far fa-heart"></i> Thank you!</span><br>
+            <span><i class="fas fa-heart"></i> Thank you!</span><br>
             <button class="btn text-white" type="submit">
               <a :href="plink" class="p-2"
                 ><i class="fab fa-patreon"></i> Patreon</a

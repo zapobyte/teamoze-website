@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4 py-2 text-white text-start">
-          Team OZE - Legion TD @ {{ new Date().getFullYear() }}
+          <small>Made with <i class="far fa-heart"></i> Team OZE - Legion TD @ {{ new Date().getFullYear() }}</small>
         </div>
         <div class="col-12 col-md-8 py-2 text-white text-end">
           <ul>
             <li v-for="item in social" :key="item.name">
               <div v-html="item.icon"></div>
-              <a :href="item.link">{{ item.name }}</a>
+              <small><a :href="item.link">{{ item.name }}</a></small>
             </li>
           </ul>
         </div>
