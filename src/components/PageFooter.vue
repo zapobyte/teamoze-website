@@ -2,10 +2,10 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4 py-2 text-white text-start">
-          <small>Made with <i class="far fa-heart"></i> Team OZE - Legion TD @ {{ new Date().getFullYear() }}</small>
+        <div class="col-12 col-md-6 py-2 text-white text-start">
+          <small>Made with <i class="far fa-heart"></i> byTeam OZE - Legion TD @ {{ new Date().getFullYear() }}</small>. <span class="text-small"> <i class="fas fa-code" title="coded"></i> by <a href="https://victorz.me">zapo</a></span>
         </div>
-        <div class="col-12 col-md-8 py-2 text-white text-end">
+        <div class="col-12 col-md-6 py-2 text-white text-end">
           <ul>
             <li v-for="item in social" :key="item.name">
               <div v-html="item.icon"></div>

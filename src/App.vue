@@ -25,8 +25,7 @@ export default {
     "navbar"
     "content"
     "footer";
-  grid-template-rows: auto 1fr;
-  grid-auto-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   background-image: url("~@/assets/bg2.jpg");
   background-position: center;
   background-size: cover;
