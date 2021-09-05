@@ -62,7 +62,7 @@
                 </h2>
                 <ul class="p-0 mx-3 m-auto">
                   <li>
-                    To download the official
+                    To download the official map
                     <button class="btn w-50">
                       <a :href="w3link">Download</a>
                     </button>
@@ -83,6 +83,13 @@
                   </li>
                 </ul>
               </div>
+            </div>
+            <div class="text-center pt-4">
+              <img
+                src="@/assets/logo.png"
+                class="img-fluid"
+                style="max-width: 512px"
+              />
             </div>
           </div>
         </div>

@@ -44,7 +44,8 @@
             </div>
             <div class="d-flex align-items-center">
               <img src="@/assets/bullet1.gif" class="me-2" />
-              <img src="@/assets/build.png" />
+              <img src="@/assets/bandit1.png" class="" />
+              <img src="@/assets/bandit2.png" />
               <h5 class="px-2">Team OZE</h5>
             </div>
           </div>
@@ -54,18 +55,21 @@
             <a href="https://maps.w3reforged.com/"> maps.w3reforged.com</a>!
           </h4>
           <div class="text-center">
-            <a href="https://www.w3champions.com/"><img src="@/assets/w3champions.png" class="pb-3 img-fluid" /></a>
-            <br>
-             <a href="https://maps.w3reforged.com/"><img
-              src="@/assets/logo-warcraft3-reforged-map-database.png"
-              class="img-fluid"
+            <a href="https://www.w3champions.com/"
+              ><img src="@/assets/w3champions.png" class="pb-3 img-fluid"
+            /></a>
+            <br />
+            <a href="https://maps.w3reforged.com/"
+              ><img
+                src="@/assets/logo-warcraft3-reforged-map-database.png"
+                class="img-fluid"
             /></a>
           </div>
           <hr />
 
-          <h4>Find us on:</h4>
-          <div class="about__data__social">
-            <ul>
+          <div class="about__data__social text-center">
+            <h4>Find us on:</h4>
+            <ul class="m-0 p-0">
               <li v-for="item in social" :key="item.name">
                 <div v-html="item.icon"></div>
                 <a :href="item.link">{{ item.name }}</a>
