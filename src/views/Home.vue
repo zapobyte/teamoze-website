@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div class="row  py-3 align-items-center h-100">
-      <div class="col-sm-12 col-md-8 align-items">
+    <div class="row align-items-stretch py-3">
+      <div class="col-sm-12 col-md-8 d-flex">
         <div class="border-w3">
-          <div class="banner-text p-3 text-center">
-            <img src="@/assets/logo.png" class="img-fluid logo" />
-            <h1 class="text-left">Welcome to <b>Legion TD Team OZE</b></h1>
+          <div class="banner-text  align-self-center p-3 text-center  h-100">
+            <img src="@/assets/logo.png" class="img-fluid logo m-auto" />
+            <h1 class="text-left w-100">Welcome to <b>Legion TD Team OZE</b></h1>
             <hr />
             <p class="text-start">
               <b>Legion TD</b> is an evolved Tower Defense game. It was originally
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 text-center">
+      <div class="col-sm-12 col-md-4 text-center align-self-center">
         <div class="border-w3 h-100 map-preview mb-1">
           <img src="@/assets/ltd.jpg" />
           <button class="btn text-white" type="submit">
@@ -76,6 +76,9 @@ export default {
   background-image: url("~@/assets/pl.jpg");
   background-size: contain;
   background-position: center;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .map-preview {
@@ -110,7 +113,6 @@ export default {
 }
 .view-logs {
   text-shadow: 1px 1px 1px black;
-  cursor: pointer;
 }
 .patreon {
   background-image: url("~@/assets/pd.jpg");

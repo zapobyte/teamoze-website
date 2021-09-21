@@ -4,7 +4,11 @@
       <div class="col-12 about border-w3 p-0 m-0">
         <div class="about__data p-3">
           <div class="about__data__header">
-            <img src="@/assets/heals.png" class="img-fluid" />
+            <img
+              src="@/assets/peon-warcraft3.gif"
+              class="img-fluid"
+              width="64"
+            />
             <h1 class="p-0 m-0">About this project</h1>
           </div>
           <hr />
@@ -40,16 +44,17 @@
             <div class="d-flex align-items-center">
               <img src="@/assets/bullet1.gif" class="me-2" />
               <img src="@/assets/vlads.png" />
-              <h5 class="px-2">SchachMatt</h5>
+              <h5 class="px-2 m-0">SchachMatt</h5>
             </div>
             <div class="d-flex align-items-center">
               <img src="@/assets/bullet1.gif" class="me-2" />
               <img src="@/assets/bandit1.png" class="" />
               <img src="@/assets/bandit2.png" />
-              <h5 class="px-2">Team OZE</h5>
+              <h5 class="px-2 m-0">Team OZE</h5>
             </div>
           </div>
-          <h4 class="py-3">
+          <hr>
+          <h4 class="py-3 text-center">
             <img src="@/assets/plus.png" width="36" /> Thanks for the support of
             <a href="https://www.w3champions.com/">W3Champions</a> community and
             <a href="https://maps.w3reforged.com/"> maps.w3reforged.com</a>!
@@ -116,8 +121,14 @@ export default {
     }
     &__social {
       & ul {
+          list-style: none;
+      }
+      & li + li::before {
+        content: url("~@/assets/bullet3.gif");
+        padding:0 15px;
       }
       & li {
+        display:inline;
         & div {
           display: inline-flex;
           padding-right: 5px;

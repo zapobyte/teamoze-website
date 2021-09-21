@@ -59,14 +59,8 @@ export default {
       expanded:false
     }
   },
-  watch:{
-    expanded(n,o){
-      console.log(n,o)
-    }
-  },
   methods:{
     toggleMenu(){
-      const btn = this.$refs.btn;
       const icon =  this.$refs.hamburger;
       icon.classList.toggle('is-active');
     }
